@@ -20,8 +20,7 @@ namespace CMS_GUI
 
         public static void StoreUserIntoFile()
         {
-            string Path = "E:\\Semester 2\\OOP\\CMS_GUI\\User.txt";
-            StreamWriter f = new StreamWriter(Path);
+            StreamWriter f = new StreamWriter(Path.UserPath);
             foreach(User u in UserList)
             {
                 f.WriteLine("{0},{1},{2}",u.getuserName(),u.getuserPassword(),u.getRole());
@@ -32,8 +31,8 @@ namespace CMS_GUI
 
         public static void LoadUser()
         {
-            string Path = "E:\\Semester 2\\OOP\\CMS_GUI\\User.txt";
-            StreamReader f = new StreamReader(Path);
+            
+            StreamReader f = new StreamReader(Path.UserPath);
             string record;
             while((record = f.ReadLine()) != null)
             {
@@ -53,6 +52,7 @@ namespace CMS_GUI
                 }
                 
             }
+            f.Close();
 
 
         }

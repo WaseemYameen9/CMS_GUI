@@ -75,8 +75,6 @@ namespace CMS_GUI
 
         private void logoutToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            UserDL.StoreUserIntoFile();
-            StudentDL.StoreStudentIntoFile();
             this.Hide();
             Main f = new Main();
             f.Show();
@@ -94,6 +92,52 @@ namespace CMS_GUI
         {
             this.Hide();
             PromoteStaffForm f = new PromoteStaffForm();
+            f.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewStudentToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViewAllStudentsForm f = new ViewAllStudentsForm();
+            f.Show();
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void viewAttendenceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminViewAttendenceForm f = new AdminViewAttendenceForm();
+            f.Show();
+        }
+
+        private void viewStaffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ViewStaffForm f = new ViewStaffForm();
+            f.Show();
+        }
+
+        private void deleteStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DeleteStudentForm f = new DeleteStudentForm();
+            f.Show();
+        }
+
+        private void editStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            EditStudentForm f = new EditStudentForm();
             f.Show();
         }
     }

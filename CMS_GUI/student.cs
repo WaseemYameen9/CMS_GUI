@@ -15,51 +15,63 @@ namespace CMS_GUI
         private int attendedclasses;
         private float fee;
         private string duedate;
+        private double Percertage;
 
-        public student(string name, float marks, int rollno, int class_)
+        public string Name { get => name; set => name = value; }
+        public float Marks { get => marks; set => marks = value; }
+        public int Rollno { get => rollno; set => rollno = value; }
+        public int Class_ { get => class_; set => class_ = value; }
+        public int Attendedclasses { get => attendedclasses; set => attendedclasses = value; }
+        public string Duedate { get => duedate; set => duedate = value; }
+        public double Percertage1 { get => Percertage; set => Percertage = value; }
+
+        public student(string name, float marks, int rollno, int class_, float fee)
         {
-            this.name = name;
-            this.marks = marks;
-            this.rollno = rollno;
-            this.class_ = class_;
-            this.attendedclasses = 0;
+            this.Name = name;
+            this.Marks = marks;
+            this.Rollno = rollno;
+            this.Class_ = class_;
+            this.Attendedclasses = 0;
             this.fee = 0;
-            this.duedate = "";
+            this.Duedate = "";
+            this.fee = fee;
+            Percertage1 = getMarksPercentage(marks);
         }
         public student(string name, float marks, int rollno, int class_, float fee , int attendedclasses , string duedate)
         {
-            this.name = name;
-            this.marks = marks;
-            this.rollno = rollno;
-            this.class_ = class_;
-            this.attendedclasses = attendedclasses;
+            this.Name = name;
+            this.Marks = marks;
+            this.Rollno = rollno;
+            this.Class_ = class_;
+            this.Attendedclasses = attendedclasses;
             this.fee = fee;
-            this.duedate = duedate;
+            this.Duedate = duedate;
+            Percertage1 = getMarksPercentage(marks);
         }
 
         public string getName()
         {
-            return name;
+            return Name;
         }
 
         public float getMarks()
         {
-            return marks;
+            return Marks;
         }
 
         public int getRollno()
         {
-            return rollno;
+            return Rollno;
         }
 
         public int getclass_()
         {
-            return class_;
+            return Class_;
         }
 
         public string getDuedate()
         {
-            return duedate;
+            return Duedate;
         }
 
         public float GetFee()
@@ -69,32 +81,32 @@ namespace CMS_GUI
 
         public int getAttendedClasses()
         {
-            return attendedclasses;
+            return Attendedclasses;
         }
 
         public void setName(string name)
         {
-            this.name = name;
+            this.Name = name;
         }
 
         public void setMarks(float marks)
         {
-            this.marks = marks;
+            this.Marks = marks;
         }
 
         public void setRollno(int rollno)
         {
-            this.rollno = rollno;
+            this.Rollno = rollno;
         }
 
         public void setClass_(int class_)
         {
-            this.class_ = class_;
+            this.Class_ = class_;
         }
 
         public void setDuedate(string duedate)
         {
-            this.duedate = duedate;
+            this.Duedate = duedate;
         }
 
         public void setFee(float fee)
@@ -104,13 +116,19 @@ namespace CMS_GUI
 
         public void setAttendedClasses(int attendedclasses)
         {
-            this.attendedclasses = attendedclasses;
+            this.Attendedclasses = attendedclasses;
         }
 
         public double getAttendencePercentage()
         {
-            double attendencePercentage = (attendedclasses / 30.0) * 100.0;
+            double attendencePercentage = (Attendedclasses / 30.0) * 100.0;
             return attendencePercentage;
+        }
+
+        public double getMarksPercentage(float marks)
+        {
+            double per = ((marks / 1100.0) * 100.0);
+            return per;
         }
     }
 }

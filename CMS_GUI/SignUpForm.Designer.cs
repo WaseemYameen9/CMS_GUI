@@ -29,6 +29,7 @@ namespace CMS_GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
@@ -38,7 +39,9 @@ namespace CMS_GUI
             this.txt1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.TextBox();
             this.txt3 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -46,7 +49,8 @@ namespace CMS_GUI
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.74757F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.25243F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lbl3, 0, 2);
@@ -69,10 +73,10 @@ namespace CMS_GUI
             // 
             // lbl1
             // 
-            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Monotype Corsiva", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(312, 25);
+            this.lbl1.Location = new System.Drawing.Point(270, 25);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(284, 33);
             this.lbl1.TabIndex = 1;
@@ -83,7 +87,7 @@ namespace CMS_GUI
             this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(129, 108);
+            this.lbl2.Location = new System.Drawing.Point(128, 108);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(136, 20);
             this.lbl2.TabIndex = 2;
@@ -94,7 +98,7 @@ namespace CMS_GUI
             this.lbl3.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.Location = new System.Drawing.Point(136, 186);
+            this.lbl3.Location = new System.Drawing.Point(135, 186);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(129, 20);
             this.lbl3.TabIndex = 3;
@@ -105,7 +109,7 @@ namespace CMS_GUI
             this.lbl4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl4.AutoSize = true;
             this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.Location = new System.Drawing.Point(172, 271);
+            this.lbl4.Location = new System.Drawing.Point(171, 271);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(93, 20);
             this.lbl4.TabIndex = 4;
@@ -113,7 +117,7 @@ namespace CMS_GUI
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(271, 326);
+            this.btn1.Location = new System.Drawing.Point(270, 326);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 23);
             this.btn1.TabIndex = 5;
@@ -125,7 +129,7 @@ namespace CMS_GUI
             // 
             this.txt1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(271, 105);
+            this.txt1.Location = new System.Drawing.Point(270, 105);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(224, 26);
             this.txt1.TabIndex = 6;
@@ -135,7 +139,7 @@ namespace CMS_GUI
             // 
             this.txt2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(271, 183);
+            this.txt2.Location = new System.Drawing.Point(270, 183);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(224, 26);
             this.txt2.TabIndex = 7;
@@ -144,21 +148,36 @@ namespace CMS_GUI
             // 
             this.txt3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt3.Location = new System.Drawing.Point(271, 268);
+            this.txt3.Location = new System.Drawing.Point(270, 268);
             this.txt3.Name = "txt3";
             this.txt3.Size = new System.Drawing.Size(224, 26);
             this.txt3.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(200, 19);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // SignUpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SignUpForm";
             this.Text = "SignUpForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,5 +193,6 @@ namespace CMS_GUI
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.TextBox txt2;
         private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -29,6 +29,7 @@ namespace CMS_GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetChallanForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.lbl1 = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@ namespace CMS_GUI
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.58156F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.41844F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel1.Controls.Add(this.txt1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn1, 2, 0);
@@ -94,7 +95,7 @@ namespace CMS_GUI
             // btn1
             // 
             this.btn1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn1.Location = new System.Drawing.Point(566, 32);
+            this.btn1.Location = new System.Drawing.Point(565, 32);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(75, 23);
             this.btn1.TabIndex = 3;
@@ -181,6 +182,7 @@ namespace CMS_GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GetChallanForm";
             this.Text = "GetChallanForm";
             this.Load += new System.EventHandler(this.GetChallanForm_Load);

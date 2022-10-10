@@ -20,6 +20,7 @@ namespace CMS_GUI
         private void viewTimetableToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
+
         }
 
         private void printChalanToolStripMenuItem_Click(object sender, EventArgs e)
@@ -38,7 +39,26 @@ namespace CMS_GUI
 
         private void applyScholarshipToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            ApplyScholarshipForm f = new ApplyScholarshipForm();
+            f.Show();
+        }
 
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void StudentMenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main f = new Main();
+            f.Show();
         }
     }
 }

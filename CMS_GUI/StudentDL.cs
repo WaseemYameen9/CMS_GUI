@@ -58,11 +58,11 @@ namespace CMS_GUI
 
         public static void StoreStudentIntoFile()
         {
-            string path = "E:\\Semester 2\\OOP\\CMS_GUI\\student.txt";
-            StreamWriter f = new StreamWriter(path , true);
+            
+            StreamWriter f = new StreamWriter(Path.StudentPath);
             foreach(student s in studentList)
             {
-                f.WriteLine(s.getName(), s.getMarks(), s.getRollno(), s.getclass_(), s.GetFee(),s.getAttendedClasses(),s.getDuedate()) ;
+                f.WriteLine("{0},{1},{2},{3},{4},{5},{6}",s.getName(), s.getMarks(), s.getRollno(), s.getclass_(), s.GetFee(),s.getAttendedClasses(),s.getDuedate()) ;
             }
             f.Flush();
             f.Close();
@@ -70,8 +70,8 @@ namespace CMS_GUI
 
         public static void LoadstudentsFromFile()
         {
-            string path = "E:\\Semester 2\\OOP\\CMS_GUI\\student.txt";
-            StreamReader f = new StreamReader(path);
+            
+            StreamReader f = new StreamReader(Path.StudentPath);
             string record;
             while((record = f.ReadLine()) != null)
             {
@@ -88,6 +88,33 @@ namespace CMS_GUI
                 studentList.Add(s);
 
             }
+            f.Close();
+
+        }
+
+        public static bool DeleteStudentForm(string name)
+        {
+            for(int i = 0; i < studentList.Count; i++)
+            {
+                if(studentList[i].Name == name)
+                {
+                    studentList.RemoveAt(i);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static student GetStudentObject(string name)
+        {
+            foreach(student s in studentList)
+            {
+                if(s.Name == name)
+                {
+                    return s;
+                }
+            }
+            return null;
         }
     }
 }

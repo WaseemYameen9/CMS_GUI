@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CMS_GUI.StudentLoginForm" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAQACAAAABoABCAIAACAAAAAAAAAAAAAABAMgA=</HashCode>
+      <FileName>StudentLoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS_GUI.StudentMenuForm" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYIAAKAABCAQAAgCAACAAAADAgABAAAAAAGAAAAAAAA=</HashCode>
+      <FileName>StudentMenuForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS_GUI.ApplyScholarshipForm" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAD4AQCAAAACAAAAAAAAAAAAAAAAeiA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS_GUI.GetChallanForm" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAYACAAAADoBwCAAAACAAAAAgACAAAAAAAAYiA=</HashCode>
+      <FileName>GetChallanForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS_GUI.ViewTimetableForm" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAAAAAAACAAABAAAACAAAACAAAFAAAAAAAAAAAAADA=</HashCode>
+      <FileName>ViewTimetableForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS_GUI.ViewAttendenceForm" Collapsed="true">
+    <Position X="0.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAYACAAAADoBwCAAAACAAAAAAAAAAAAAAAAYiA=</HashCode>
+      <FileName>ViewAttendenceForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

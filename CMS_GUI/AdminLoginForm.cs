@@ -39,7 +39,17 @@ namespace CMS_GUI
                     MessageBox.Show("Invalid User");
                 }
             }
-           
-        
+
+        private void AdminLoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Main f = new Main();
+            f.Show();
+        }
     }
 }

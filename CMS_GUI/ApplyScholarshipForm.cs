@@ -21,5 +21,13 @@ namespace CMS_GUI
         {
 
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main f = new Main();
+            MessageBox.Show("Applied Successfully");
+            f.Show();
+        }
     }
 }

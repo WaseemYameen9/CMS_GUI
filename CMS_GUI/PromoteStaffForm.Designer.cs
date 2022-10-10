@@ -29,6 +29,7 @@ namespace CMS_GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PromoteStaffForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lbl1 = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.TextBox();
@@ -49,7 +50,7 @@ namespace CMS_GUI
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.875F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.125F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
             this.tableLayoutPanel1.Controls.Add(this.lbl1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txt1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl2, 0, 1);
@@ -177,7 +178,7 @@ namespace CMS_GUI
             // btn2
             // 
             this.btn2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn2.Location = new System.Drawing.Point(640, 14);
+            this.btn2.Location = new System.Drawing.Point(639, 14);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(75, 23);
             this.btn2.TabIndex = 12;
@@ -191,6 +192,7 @@ namespace CMS_GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PromoteStaffForm";
             this.Text = "PromoteStaffForm";
             this.Load += new System.EventHandler(this.PromoteStaffForm_Load);

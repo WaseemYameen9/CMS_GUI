@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CMS_GUI
 {
-    public partial class ViewTimetableForm : Form
+    public partial class ViewTimetableForm : StudentMenuForm
     {
         public ViewTimetableForm()
         {

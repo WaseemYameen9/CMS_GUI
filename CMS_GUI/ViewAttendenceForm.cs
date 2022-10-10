@@ -25,15 +25,12 @@ namespace CMS_GUI
         private void btn1_Click(object sender, EventArgs e)
         {
             string name = txt1.Text;
-            foreach (student s in StudentDL.StudentList)
-            {
-                if(s.getName() == name)
-                {
-                    lbl5.Text = "30";
-                    lbl6.Text = s.getAttendedClasses().ToString();
-                    lbl7.Text = s.getAttendencePercentage().ToString();
-                }
-            }
+            student s = StudentDL.GetStudentObject(name);
+            
+            lbl5.Text = "30";
+            lbl6.Text = s.getAttendedClasses().ToString();
+            lbl7.Text = s.getAttendencePercentage().ToString();
+         
         }
 
         private void btn2_Click(object sender, EventArgs e)

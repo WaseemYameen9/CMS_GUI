@@ -15,7 +15,8 @@ namespace CMS_GUI
         public Main()
         {
             UserDL.LoadUser();
-           /* StudentDL.LoadstudentsFromFile(); */
+            StudentDL.LoadstudentsFromFile();
+            StaffDL.LoadStaffFormFile();
             InitializeComponent();
         }
 
@@ -43,6 +44,26 @@ namespace CMS_GUI
             this.Hide();
             StudentLoginForm f = new StudentLoginForm();
             f.Show();
+
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+
+            
+            UserDL.StoreUserIntoFile();
+            StudentDL.StoreStudentIntoFile();
+            StaffDL.storeStaffIntoFile();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
 
         }
     }

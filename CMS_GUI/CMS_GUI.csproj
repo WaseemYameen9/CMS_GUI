@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>uetlahore.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -77,11 +80,29 @@
     <Compile Include="AdminMenuForm.Designer.cs">
       <DependentUpon>AdminMenuForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminViewAttendenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminViewAttendenceForm.Designer.cs">
+      <DependentUpon>AdminViewAttendenceForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ApplyScholarshipForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ApplyScholarshipForm.Designer.cs">
       <DependentUpon>ApplyScholarshipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteStudentForm.Designer.cs">
+      <DependentUpon>DeleteStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentForm.Designer.cs">
+      <DependentUpon>EditStudentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FeeSubmissionForm.cs">
       <SubType>Form</SubType>
@@ -101,6 +122,7 @@
     <Compile Include="GetChallanForm.Designer.cs">
       <DependentUpon>GetChallanForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Path.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="PromoteStaffForm.cs">
       <SubType>Form</SubType>
@@ -146,6 +168,12 @@
     <Compile Include="ViewAttendenceForm.Designer.cs">
       <DependentUpon>ViewAttendenceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewStaffForm.Designer.cs">
+      <DependentUpon>ViewStaffForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewTimetableForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,8 +195,17 @@
     <EmbeddedResource Include="AdminMenuForm.resx">
       <DependentUpon>AdminMenuForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminViewAttendenceForm.resx">
+      <DependentUpon>AdminViewAttendenceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ApplyScholarshipForm.resx">
       <DependentUpon>ApplyScholarshipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteStudentForm.resx">
+      <DependentUpon>DeleteStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudentForm.resx">
+      <DependentUpon>EditStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeeSubmissionForm.resx">
       <DependentUpon>FeeSubmissionForm.cs</DependentUpon>
@@ -190,6 +227,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUpForm.resx">
       <DependentUpon>SignUpForm.cs</DependentUpon>
@@ -206,9 +244,13 @@
     <EmbeddedResource Include="ViewAttendenceForm.resx">
       <DependentUpon>ViewAttendenceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaffForm.resx">
+      <DependentUpon>ViewStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewTimetableForm.resx">
       <DependentUpon>ViewTimetableForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -221,6 +263,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uetlahore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="uetlahore.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

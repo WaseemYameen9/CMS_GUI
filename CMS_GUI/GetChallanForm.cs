@@ -30,15 +30,12 @@ namespace CMS_GUI
         private void btn1_Click_1(object sender, EventArgs e)
         {
             string name = txt1.Text;
-            foreach (student s in StudentDL.StudentList)
-            {
-                if (s.getName() == name)
-                {
-                    lbl5.Text = s.GetFee().ToString();
-                    lbl6.Text = s.getDuedate();
-                    lbl7.Text = "0019087654214";
-                }
-            }
+            student s = StudentDL.GetStudentObject(name);
+           
+          lbl5.Text = s.GetFee().ToString();
+          lbl6.Text = s.getDuedate();
+          lbl7.Text = "0019087654214";
+  
 
         }
 
